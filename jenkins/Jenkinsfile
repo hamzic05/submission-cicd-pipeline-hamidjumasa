@@ -20,7 +20,7 @@ node {
 	    input message: 'Lanjutkan ke tahap Deploy?', ok: 'Proceed'
     }
     stage('Deploy') {
-        archiveArtifacts artifacts: "target/**"
+        archiveArtifacts artifacts: 'target/apps-ver1.0-SNAPSHOT.jar'
 //	    archiveArtifacts 'target/apps-ver1.0-SNAPSHOT.jar'
 	    //docker.build("my-app:latest");
 	    //sh "ssh-keyscan -H  54.169.98.174 >> ~/.ssh/known_hosts"
